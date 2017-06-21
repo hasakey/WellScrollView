@@ -7,8 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "WellScrollView.h"
 
-@interface ViewController ()
+@interface ViewController ()<WellScrollViewDelegate>
 
 @end
 
@@ -16,14 +17,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    WellScrollView *well = [[WellScrollView alloc] initWithFrame:CGRectMake(0, 64, self.view.frame.size.width, 200) ImageArray:@[@"1",@"2",@"3",@"4",@"5",]];
+    well.wellScrollViewDelegate = self;
+    [self.view addSubview:well];
+    
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)clickImageIndex:(NSInteger)imageIndex
+{
+    NSLog(@"点击了第 %ld 张",(long)(imageIndex + 1));
 }
+
 
 
 @end

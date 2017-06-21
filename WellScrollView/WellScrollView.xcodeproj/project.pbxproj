@@ -15,6 +15,7 @@
 		2A647F7E1EFA080300E7FCA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A647F7C1EFA080300E7FCA3 /* LaunchScreen.storyboard */; };
 		2A647F891EFA080300E7FCA3 /* WellScrollViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A647F881EFA080300E7FCA3 /* WellScrollViewTests.m */; };
 		2A647F941EFA080300E7FCA3 /* WellScrollViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A647F931EFA080300E7FCA3 /* WellScrollViewUITests.m */; };
+		2A647FA41EFA08A600E7FCA3 /* WellScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A647FA31EFA08A600E7FCA3 /* WellScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		2A647F8F1EFA080300E7FCA3 /* WellScrollViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WellScrollViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A647F931EFA080300E7FCA3 /* WellScrollViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WellScrollViewUITests.m; sourceTree = "<group>"; };
 		2A647F951EFA080300E7FCA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A647FA21EFA08A600E7FCA3 /* WellScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WellScrollView.h; path = View/WellScrollView.h; sourceTree = "<group>"; };
+		2A647FA31EFA08A600E7FCA3 /* WellScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WellScrollView.m; path = View/WellScrollView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		2A647F6D1EFA080300E7FCA3 /* WellScrollView */ = {
 			isa = PBXGroup;
 			children = (
+				2A647FA11EFA088300E7FCA3 /* View */,
 				2A647F711EFA080300E7FCA3 /* AppDelegate.h */,
 				2A647F721EFA080300E7FCA3 /* AppDelegate.m */,
 				2A647F741EFA080300E7FCA3 /* ViewController.h */,
@@ -138,6 +142,15 @@
 				2A647F951EFA080300E7FCA3 /* Info.plist */,
 			);
 			path = WellScrollViewUITests;
+			sourceTree = "<group>";
+		};
+		2A647FA11EFA088300E7FCA3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2A647FA21EFA08A600E7FCA3 /* WellScrollView.h */,
+				2A647FA31EFA08A600E7FCA3 /* WellScrollView.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A647F761EFA080300E7FCA3 /* ViewController.m in Sources */,
+				2A647FA41EFA08A600E7FCA3 /* WellScrollView.m in Sources */,
 				2A647F731EFA080300E7FCA3 /* AppDelegate.m in Sources */,
 				2A647F701EFA080300E7FCA3 /* main.m in Sources */,
 			);
